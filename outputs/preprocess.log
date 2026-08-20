@@ -1,0 +1,16 @@
+[preprocess] 995799 input SMILES, 32 workers
+[preprocess] parsed 988139 (99.2%)
+[preprocess] SELFIES token length pct: {50: 41, 90: 71, 95: 81, 99: 100, 100: 148}
+[preprocess] keep len<=96: 974942 (98.7%)
+[preprocess] vocab 182 (incl PAD/MASK)
+[preprocess] wrote data/pi1m_processed.npz  tokens=(974942, 96) desc=(974942, 10)
+  MolWt                mean=  379.423 std= 152.667 min=   36.033 max= 1277.464
+  MolLogP              mean=    4.470 std=   2.781 min=   -5.588 max=   29.315
+  TPSA                 mean=   63.283 std=  38.099 min=    0.000 max=  336.320
+  NumHDonors           mean=    0.844 std=   1.150 min=    0.000 max=   13.000
+  NumHAcceptors        mean=    4.323 std=   2.459 min=    0.000 max=   35.000
+  NumRotatableBonds    mean=   11.561 std=   7.383 min=    0.000 max=   80.000
+  RingCount            mean=    1.656 std=   1.451 min=    0.000 max=   10.000
+  FractionCSP3         mean=    0.480 std=   0.301 min=    0.000 max=    1.000
+  QED                  mean=    0.377 std=   0.220 min=    0.004 max=    0.948
+  SAscore              mean=    3.805 std=   0.780 min=    1.000 max=    8.148

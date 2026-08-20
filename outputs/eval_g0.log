@@ -1,0 +1,39 @@
+  MolWt            p  10 target   189.324 -> median   191.250 MAE   10.409 valid 0.91
+  MolWt            p  30 target   283.276 -> median   284.398 MAE   11.640 valid 0.86
+  MolWt            p  50 target   366.379 -> median   366.446 MAE   15.818 valid 0.90
+  MolWt            p  70 target   454.690 -> median   458.470 MAE   17.520 valid 0.86
+  MolWt            p  90 target   588.659 -> median   588.773 MAE   19.185 valid 0.88
+  MolLogP          p  10 target     1.233 -> median     1.364 MAE    0.639 valid 0.91
+  MolLogP          p  30 target     2.806 -> median     2.835 MAE    0.652 valid 0.91
+  MolLogP          p  50 target     4.127 -> median     4.049 MAE    0.703 valid 0.88
+  MolLogP          p  70 target     5.659 -> median     5.603 MAE    0.705 valid 0.87
+  MolLogP          p  90 target     8.148 -> median     8.033 MAE    0.793 valid 0.86
+  TPSA             p  10 target    12.470 -> median    12.470 MAE    4.605 valid 0.88
+  TPSA             p  30 target    40.050 -> median    40.620 MAE    7.629 valid 0.88
+  TPSA             p  50 target    61.360 -> median    60.440 MAE    6.992 valid 0.88
+  TPSA             p  70 target    81.700 -> median    81.700 MAE    8.048 valid 0.91
+  TPSA             p  90 target   114.430 -> median   113.050 MAE    9.055 valid 0.89
+  RingCount        p  10 target     0.000 -> median     0.000 MAE    0.015 valid 0.91
+  RingCount        p  30 target     1.000 -> median     1.000 MAE    0.154 valid 0.89
+  RingCount        p  50 target     1.000 -> median     1.000 MAE    0.176 valid 0.91
+  RingCount        p  70 target     2.000 -> median     2.000 MAE    0.322 valid 0.89
+  RingCount        p  90 target     4.000 -> median     3.000 MAE    0.865 valid 0.84
+
+[summary] Spearman(target, achieved) per feature:
+  MolLogP          rho = 0.931   (n=2271)
+  MolWt            rho = 0.970   (n=2255)
+  RingCount        rho = 0.902   (n=2271)
+  TPSA             rho = 0.960   (n=2271)
+Traceback (most recent call last):
+  File "/home/p78141027/project/Polymer/src/evaluate.py", line 100, in <module>
+    plot(raw, args.features, args.guidance,
+    ^^^^^^
+  File "/home/p78141027/project/Polymer/src/evaluate.py", line 91, in main
+    df.to_csv(os.path.join(args.outdir, "adherence.csv"), index=False)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/p78141027/anaconda3/envs/polymer/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 75, in wrapper
+    return get_method(self)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/p78141027/anaconda3/envs/polymer/lib/python3.11/site-packages/matplotlib/axis.py", line 2260, in set_ticklabels
+    raise ValueError(
+ValueError: The number of FixedLocator locations (4), usually from a call to set_ticks, does not match the number of labels (5).

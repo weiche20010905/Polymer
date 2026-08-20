@@ -1,0 +1,14 @@
+# 資料（PI1M 原始檔可從上游下載，前處理產物可重建）
+data/*.csv
+data/*.npz
+data/*_vocab.pkl
+
+# 模型權重（單檔 468MB，超過 GitHub 限制）
+checkpoints/**/*.pt
+
+# 生成產物中體積較大的中間檔
+outputs/gen_smoke.csv
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/

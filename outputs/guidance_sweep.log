@@ -1,0 +1,15 @@
+{'guidance': 0, 'n_unique': 426, 'validity': 0.9922, 'polymer_valid': 0.832, 'uniqueness': 1.0, 'novelty': 1.0, 'MolWt_median': 351.436, 'MolWt_mae': 15.351, 'MolWt_std': 23.412, 'MolLogP_median': 2.758, 'MolLogP_mae': 0.671, 'MolLogP_std': 0.813, 'TPSA_median': 60.71, 'TPSA_mae': 7.792, 'TPSA_std': 10.218}
+{'guidance': 0.5, 'n_unique': 418, 'validity': 0.9941, 'polymer_valid': 0.8164, 'uniqueness': 1.0, 'novelty': 0.9976, 'MolWt_median': 352.434, 'MolWt_mae': 13.99, 'MolWt_std': 21.464, 'MolLogP_median': 2.581, 'MolLogP_mae': 0.645, 'MolLogP_std': 0.824, 'TPSA_median': 60.24, 'TPSA_mae': 7.89, 'TPSA_std': 10.133}
+{'guidance': 1, 'n_unique': 398, 'validity': 0.9883, 'polymer_valid': 0.7773, 'uniqueness': 1.0, 'novelty': 0.9975, 'MolWt_median': 352.561, 'MolWt_mae': 13.654, 'MolWt_std': 21.24, 'MolLogP_median': 2.413, 'MolLogP_mae': 0.659, 'MolLogP_std': 0.836, 'TPSA_median': 60.89, 'TPSA_mae': 7.829, 'TPSA_std': 10.009}
+{'guidance': 2, 'n_unique': 360, 'validity': 0.9902, 'polymer_valid': 0.7031, 'uniqueness': 1.0, 'novelty': 1.0, 'MolWt_median': 351.434, 'MolWt_mae': 14.588, 'MolWt_std': 23.951, 'MolLogP_median': 2.232, 'MolLogP_mae': 0.689, 'MolLogP_std': 0.835, 'TPSA_median': 61.44, 'TPSA_mae': 7.704, 'TPSA_std': 10.29}
+{'guidance': 3, 'n_unique': 315, 'validity': 0.9863, 'polymer_valid': 0.6152, 'uniqueness': 1.0, 'novelty': 1.0, 'MolWt_median': 349.476, 'MolWt_mae': 20.18, 'MolWt_std': 32.936, 'MolLogP_median': 2.141, 'MolLogP_mae': 0.717, 'MolLogP_std': 0.829, 'TPSA_median': 61.44, 'TPSA_mae': 8.74, 'TPSA_std': 11.408}
+{'guidance': 5, 'n_unique': 218, 'validity': 0.9941, 'polymer_valid': 0.4258, 'uniqueness': 1.0, 'novelty': 1.0, 'MolWt_median': 345.025, 'MolWt_mae': 28.909, 'MolWt_std': 45.6, 'MolLogP_median': 1.95, 'MolLogP_mae': 0.932, 'MolLogP_std': 0.996, 'TPSA_median': 60.67, 'TPSA_mae': 10.113, 'TPSA_std': 13.554}
+
+wrote outputs/guidance_sweep.csv
+ guidance  n_unique  validity  polymer_valid  uniqueness  novelty  MolWt_median  MolWt_mae  MolWt_std  MolLogP_median  MolLogP_mae  MolLogP_std  TPSA_median  TPSA_mae  TPSA_std
+      0.0       426    0.9922         0.8320         1.0   1.0000       351.436     15.351     23.412           2.758        0.671        0.813        60.71     7.792    10.218
+      0.5       418    0.9941         0.8164         1.0   0.9976       352.434     13.990     21.464           2.581        0.645        0.824        60.24     7.890    10.133
+      1.0       398    0.9883         0.7773         1.0   0.9975       352.561     13.654     21.240           2.413        0.659        0.836        60.89     7.829    10.009
+      2.0       360    0.9902         0.7031         1.0   1.0000       351.434     14.588     23.951           2.232        0.689        0.835        61.44     7.704    10.290
+      3.0       315    0.9863         0.6152         1.0   1.0000       349.476     20.180     32.936           2.141        0.717        0.829        61.44     8.740    11.408
+      5.0       218    0.9941         0.4258         1.0   1.0000       345.025     28.909     45.600           1.950        0.932        0.996        60.67    10.113    13.554

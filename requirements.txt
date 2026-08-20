@@ -1,0 +1,10 @@
+# Python 3.11
+torch>=2.5          # 開發時用 2.11.0+cu128
+rdkit>=2024.3
+selfies>=2.1.1
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.4
+scipy>=1.11
+matplotlib>=3.8
+tqdm

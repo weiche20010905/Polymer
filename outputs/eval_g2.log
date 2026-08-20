@@ -1,0 +1,37 @@
+  MolWt            p  10 target   189.324 -> median   190.650 MAE    7.466 valid 0.90
+  MolWt            p  30 target   283.276 -> median   286.280 MAE    8.921 valid 0.86
+  MolWt            p  50 target   366.379 -> median   368.433 MAE   11.056 valid 0.86
+  MolWt            p  70 target   454.690 -> median   456.582 MAE   11.442 valid 0.87
+  MolWt            p  90 target   588.659 -> median   589.787 MAE   16.008 valid 0.83
+  MolLogP          p  10 target     1.233 -> median     1.190 MAE    0.402 valid 0.90
+  MolLogP          p  30 target     2.806 -> median     2.924 MAE    0.466 valid 0.88
+  MolLogP          p  50 target     4.127 -> median     4.129 MAE    0.521 valid 0.88
+  MolLogP          p  70 target     5.659 -> median     5.572 MAE    0.608 valid 0.86
+  MolLogP          p  90 target     8.148 -> median     7.834 MAE    0.864 valid 0.83
+  TPSA             p  10 target    12.470 -> median    12.470 MAE    3.413 valid 0.88
+  TPSA             p  30 target    40.050 -> median    41.860 MAE    6.054 valid 0.84
+  TPSA             p  50 target    61.360 -> median    60.440 MAE    5.238 valid 0.85
+  TPSA             p  70 target    81.700 -> median    81.700 MAE    4.101 valid 0.90
+  TPSA             p  90 target   114.430 -> median   114.430 MAE    6.823 valid 0.85
+  RingCount        p  10 target     0.000 -> median     0.000 MAE    0.004 valid 0.90
+  RingCount        p  30 target     1.000 -> median     1.000 MAE    0.125 valid 0.89
+  RingCount        p  50 target     1.000 -> median     1.000 MAE    0.149 valid 0.92
+  RingCount        p  70 target     2.000 -> median     2.000 MAE    0.315 valid 0.90
+  RingCount        p  90 target     4.000 -> median     3.000 MAE    0.828 valid 0.83
+
+[summary] Spearman(target, achieved) per feature:
+  MolLogP          rho = 0.948   (n=2228)
+  MolWt            rho = 0.973   (n=2209)
+  RingCount        rho = 0.910   (n=2270)
+  TPSA             rho = 0.970   (n=2210)
+Traceback (most recent call last):
+  File "/home/p78141027/project/Polymer/src/evaluate.py", line 100, in <module>
+    main()
+  File "/home/p78141027/project/Polymer/src/evaluate.py", line 91, in main
+    ax.set_xticklabels([f"p{int(p)}" for p in args.percentiles])
+  File "/home/p78141027/anaconda3/envs/polymer/lib/python3.11/site-packages/matplotlib/axes/_base.py", line 75, in wrapper
+    return get_method(self)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/p78141027/anaconda3/envs/polymer/lib/python3.11/site-packages/matplotlib/axis.py", line 2260, in set_ticklabels
+    raise ValueError(
+ValueError: The number of FixedLocator locations (4), usually from a call to set_ticks, does not match the number of labels (5).
